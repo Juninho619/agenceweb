@@ -1,36 +1,43 @@
-header {
-  font-family: Poppins;
+h1 {
+  font-family: poppins;
   font-weight: 600;
+}
+
+h2 {
+  font-family: poppins;
+  font-weight: 600;
+}
+
+p {
+  font-family: Open Sans;
+}
+header {
   background-image: url(../medias/images/bg_hero_desktop.svg);
   background-color: hsl(193, 100%, 96%);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-areas:
+    "logo button"
+    "title image";
+}
+.header-up-logo {
+  grid-area: logo;
 }
 
 .header-up-button {
-  background-color: white;
-  right: 0px;
-  position: absolute;
-  border-radius: 28%;
-  width: 120px;
-  border-style: solid;
-  top: 10px;
+  grid-area: buton;
 }
 
-.header-container-text-button {
-  background-color: pink;
-  width: 155px;
-  border-radius: 25%;
-  justify-content: left;
+.header-container {
+  display: grid;
+  grid-template-areas: "title image";
 }
 
-body {
-  font-size: 18px;
+.header-container-text-main-title div img {
+  grid-area: image;
 }
 
-.header-container-text-main-title {
-  justify-content: left;
+.header-container-text {
+  grid-area: title;
 }
 
 .main {
@@ -43,13 +50,78 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.main-together {
+  display: grid;
+  grid-template-areas: "text image";
+}
+
+.main-together-text {
+  display: grid;
+  grid-area: text;
+}
+
+.main-together-img {
+  display: grid;
+  grid-area: image;
+}
+
 .main-conversation {
   border-style: solid;
+}
+
+.main-conversation {
+  display: grid;
+  grid-template-areas: "image text";
+}
+
+.main-conversation-img {
+  display: grid;
+  grid-area: image;
+}
+
+.main-conversation-text {
+  display: grid;
+  grid-area: text;
 }
 
 .main-user {
   border-style: solid;
 }
+
+.main-user {
+  display: grid;
+  grid-template-areas: "text image";
+}
+
+.main-user-text {
+  display: grid;
+  grid-area: text;
+}
+
+.main-user-img {
+  display: grid;
+  grid-area: image;
+}
 footer {
-  background-color: hsl(208, 11%, 55%);
+  background-color: hsl(192, 100%, 9%);
+}
+
+.header-up-button {
+  background-color: white;
+  right: 0px;
+  position: absolute;
+  border-radius: 30%;
+  width: 120px;
+  border-style: solid;
+  top: 10px;
+}
+
+.header-container-text-button {
+  background-color: hsl(322, 100%, 66%);
+  width: 155px;
+  border-radius: 25%;
+}
+
+body {
+  font-size: 18px;
 }
