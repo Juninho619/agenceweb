@@ -65,4 +65,28 @@
   .header-container img {
     width: 80vw;
   }
+  .main {
+    display: grid;
+    grid-template-areas:
+      "together"
+      "conversation"
+      "user"
+      "start";
+    margin: 0 15vw;
+  }
+  .main-together {
+    grid-area: together;
+  }
+  .main-conversation {
+    grid-area: conversation;
+  }
+  .main-user {
+    grid-area: user;
+  }
+  .main-start {
+    grid-area: start;
+  }
+  .main-img {
+    width: 70vw;
+  }
 }
