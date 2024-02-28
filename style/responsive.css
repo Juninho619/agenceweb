@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@media only screen and (max-width: 376px) {
+  body {
+    font-size: 12px;
+    font-family: "Open Sans";
+    margin: 0;
+  }
+  .header {
+    font-family: "Poppins";
+    background-image: url(../medias/images/bg_hero_mobile.svg);
+    background-repeat: repeat;
+    background-color: hsl(193, 100%, 96%);
+    font-weight: 600;
+  }
+  .header-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+  }
+  .header-up-logo {
+    width: 100px;
+    height: 15px;
+  }
+  .header-up-button {
+    background-color: white;
+    width: 20vw;
+    border-radius: 30px;
+    padding: 4px 8px;
+    text-align: center;
+    box-shadow: 0px 3px 10px #ccc;
+    font-size: 10px;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 10px 10px;
+  }
+  .header-container-text {
+    margin: 0 10vh;
+  }
+  .header-container-text p {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Open Sans";
+  }
+}
