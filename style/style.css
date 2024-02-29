@@ -40,7 +40,7 @@ header {
   grid-area: title;
 }
 
-/* .main {
+.main {
   display: grid;
   gap: 15px;
 }
@@ -104,7 +104,7 @@ header {
 }
 footer {
   background-color: hsl(192, 100%, 9%);
-} */
+}
 
 /* .header-up-button {
   background-color: white;
