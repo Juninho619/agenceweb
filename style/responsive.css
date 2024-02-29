@@ -20,7 +20,7 @@
   .header-up {
     grid-area: up;
     display: grid;
-    grid-template-areas: "logo button";
+    grid-template-areas: "logo buton";
     padding: 5vh 5vw;
     margin-bottom: 5px;
   }
@@ -30,18 +30,20 @@
     height: 15px;
   }
   .header-up-button {
-    grid-area: button;
+    grid-area: buton;
     background-color: white;
     width: 20vw;
+    justify-self: flex-end;
+    position: static;
     border-radius: 30px;
     padding: 4px 8px;
     text-align: center;
     box-shadow: 0px 3px 10px #ccc;
     font-size: 10px;
-    justify-self: flex-end;
   }
   .header-container {
     grid-area: container;
+    grid-template-areas: "";
     text-align: center;
     margin: 40px 10px 10px;
   }
