@@ -12,23 +12,67 @@ p {
   font-family: Open Sans;
 }
 
-/* body {
-  font-size: 18px;
-} */
+body {
+  padding: 0%;
+  margin: 0%;
+}
 header {
   background-image: url(../medias/images/bg_hero_desktop.svg);
   background-color: hsl(193, 100%, 96%);
   display: grid;
   grid-template-areas:
-    "logo button"
-    "title-image title-image";
+    "up"
+    "title-image";
+  padding-right: 77px;
+}
+
+.header-up {
+  grid-area: up;
+}
+
+.header-container-text {
+  margin-top: 180px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.header-container-text-button {
+  text-align: center;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  width: 155px;
+  border-radius: 40px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+header div p {
+  padding: 10px;
+  padding-right: 278px;
+}
+
+header div img {
+  width: 600px;
 }
 .header-up-logo {
-  grid-area: logo;
+  height: 60px;
+  width: 200px;
+  margin-top: 28px;
+  margin-left: 50px;
 }
 
 .header-up-button {
   grid-area: buton;
+  margin-right: 65px;
+  background-color: white;
+  right: 0px;
+  position: absolute;
+  border-radius: 65px;
+  width: 120px;
+  top: 10px;
+  text-align: center;
+  padding: 5px 5px 5px 15px;
 }
 
 .header-container {
@@ -109,19 +153,3 @@ header {
 footer {
   background-color: hsl(192, 100%, 9%);
 }
-
-/* .header-up-button {
-  background-color: white;
-  right: 0px;
-  position: absolute;
-  border-radius: 30%;
-  width: 120px;
-  border-style: solid;
-  top: 10px;
-}
-
-.header-container-text-button {
-  background-color: hsl(322, 100%, 66%);
-  width: 155px;
-  border-radius: 25%;
-} */
