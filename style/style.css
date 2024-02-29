@@ -1,4 +1,4 @@
-/* h1 {
+h1 {
   font-family: poppins;
   font-weight: 600;
 }
@@ -10,7 +10,7 @@ h2 {
 
 p {
   font-family: Open Sans;
-}*/
+}
 header {
   background-image: url(../medias/images/bg_hero_desktop.svg);
   background-color: hsl(193, 100%, 96%);
