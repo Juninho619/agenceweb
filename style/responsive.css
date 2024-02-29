@@ -20,17 +20,15 @@
   .header-up {
     grid-area: up;
     display: grid;
-    grid-template-areas: "logo button";
+    grid-template-areas: "logo buton";
     padding: 5vh 5vw;
     margin-bottom: 5px;
   }
   .header-up-logo {
-    grid-area: logo;
     width: 100px;
     height: 15px;
   }
   .header-up-button {
-    grid-area: button;
     background-color: white;
     width: 20vw;
     border-radius: 30px;
@@ -39,24 +37,39 @@
     box-shadow: 0px 3px 10px #ccc;
     font-size: 10px;
     justify-self: flex-end;
+    position: initial;
+    border: 0;
   }
   .header-container {
     grid-area: container;
     text-align: center;
-    margin: 40px 10px 10px;
+    margin: 40px 0;
   }
   .header-container-text {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "text"
+      "button";
     margin: 0 7vh;
   }
+  .header-container-text-main-title {
+    grid-area: title;
+  }
   .header-container-text p {
+    grid-area: text;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Open Sans";
-    word-spacing: 2px;
+    word-spacing: 1px;
+    margin: 0;
   }
   .header-container-text-button {
+    grid-area: button;
     border-radius: 30px;
-    margin: 9vh 7vw;
+    margin: 9vh 0 10vh;
+    width: 60vw;
+    justify-self: center;
     padding: 3vh 0;
     background-color: hsl(322, 100%, 66%);
     color: white;
@@ -64,6 +77,7 @@
   }
   .header-container img {
     width: 80vw;
+    margin: 0 8vw;
   }
   .main {
     display: grid;
@@ -72,13 +86,47 @@
       "conversation"
       "user"
       "start";
-    margin: 0 15vw;
+    margin: 0 5vw;
+    padding: 15vh 0;
+    row-gap: 20vh;
   }
   .main-together {
     grid-area: together;
+    display: grid;
+    grid-template-areas:
+      "img"
+      "title"
+      "texte";
+    text-align: center;
+    box-shadow: 0px 3px 10px #ccc;
+    border-radius: 18px;
+    padding: 15vh 0 10vh;
+  }
+  .main-together-title {
+    grid-area: title;
+    margin-bottom: 2vh;
+  }
+  .main-together-text {
+    grid-area: texte;
+    padding: 0 10vw;
+    color: hsl(208, 11%, 55%);
+    font-size: 14px;
+  }
+  .main-together-img {
+    grid-area: img;
+    justify-self: center;
+    margin-bottom: 5vh;
   }
   .main-conversation {
     grid-area: conversation;
+    display: grid;
+    grid-template-areas: "texte" "img";
+  }
+  .main-conversation-img {
+    grid-area: img;
+  }
+  .main-conversation-text {
+    grid-area: texte;
   }
   .main-user {
     grid-area: user;
@@ -87,6 +135,6 @@
     grid-area: start;
   }
   .main-img {
-    width: 70vw;
+    width: 60vw;
   }
 }

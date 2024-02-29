@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
   font-family: poppins;
   font-weight: 600;
 }
@@ -18,6 +18,9 @@ header {
   grid-template-areas:
     "logo button"
     "title image";
+} */
+body {
+  font-size: 18px;
 }
 .header-up-logo {
   grid-area: logo;
@@ -25,22 +28,34 @@ header {
 
 .header-up-button {
   grid-area: buton;
+  background-color: white;
+  right: 0px;
+  position: absolute;
+  border-radius: 30%;
+  width: 120px;
+  border-style: solid;
+  top: 10px;
 }
 
 .header-container {
   display: grid;
-  grid-template-areas: "title image";
+  grid-template-areas: "title" "image";
 }
 
-.header-container-text-main-title div img {
+.header-container-text-main-title {
   grid-area: image;
 }
 
 .header-container-text {
   grid-area: title;
 }
+.header-container-text-button {
+  background-color: hsl(322, 100%, 66%);
+  width: 155px;
+  border-radius: 25%;
+}
 
-.main {
+/* .main {
   display: grid;
   gap: 15px;
 }
@@ -104,24 +119,4 @@ header {
 }
 footer {
   background-color: hsl(192, 100%, 9%);
-}
-
-.header-up-button {
-  background-color: white;
-  right: 0px;
-  position: absolute;
-  border-radius: 30%;
-  width: 120px;
-  border-style: solid;
-  top: 10px;
-}
-
-.header-container-text-button {
-  background-color: hsl(322, 100%, 66%);
-  width: 155px;
-  border-radius: 25%;
-}
-
-body {
-  font-size: 18px;
-}
+} */
