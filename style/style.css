@@ -11,6 +11,10 @@ h2 {
 p {
   font-family: Open Sans;
 }
+
+/* body {
+  font-size: 18px;
+} */
 header {
   background-image: url(../medias/images/bg_hero_desktop.svg);
   background-color: hsl(193, 100%, 96%);
@@ -120,8 +124,4 @@ footer {
   background-color: hsl(322, 100%, 66%);
   width: 155px;
   border-radius: 25%;
-} */
-
-/* body {
-  font-size: 18px;
 } */
