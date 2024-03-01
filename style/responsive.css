@@ -64,7 +64,8 @@
     word-spacing: 1px;
     margin: 0;
   }
-  .header-container-text-button {
+  .header-container-text-button,
+  .main-start-button {
     grid-area: button;
     border-radius: 30px;
     margin: 9vh 0 10vh;
@@ -88,9 +89,14 @@
       "start";
     margin: 0 5vw;
     padding: 15vh 0;
-    row-gap: 20vh;
   }
-  .main-together {
+  .main-img {
+    width: 60vw;
+  }
+  .main-together,
+  .main-conversation,
+  .main-user,
+  .main-start {
     grid-area: together;
     display: grid;
     grid-template-areas:
@@ -100,41 +106,103 @@
     text-align: center;
     box-shadow: 0px 3px 10px #ccc;
     border-radius: 18px;
-    padding: 15vh 0 10vh;
+    padding: 15vh 0 5vh;
+    margin-bottom: 8vh;
   }
-  .main-together-title {
+  .main-together-title,
+  .main-conversation-title,
+  .main-user-title {
     grid-area: title;
     margin-bottom: 2vh;
   }
-  .main-together-text {
+  .main-together-text,
+  .main-conversation-text p,
+  .main-user-text p {
     grid-area: texte;
     padding: 0 10vw;
     color: hsl(208, 11%, 55%);
     font-size: 14px;
   }
-  .main-together-img {
+  .main-together-img,
+  .main-conversation-img,
+  .main-user-img {
     grid-area: img;
     justify-self: center;
     margin-bottom: 5vh;
   }
   .main-conversation {
     grid-area: conversation;
-    display: grid;
-    grid-template-areas: "texte" "img";
   }
   .main-conversation-img {
     grid-area: img;
+    justify-self: center;
+    margin-bottom: 5vh;
   }
   .main-conversation-text {
     grid-area: texte;
+    padding: 0 1vw;
   }
   .main-user {
     grid-area: user;
+    margin-bottom: 0;
+  }
+  .main-user-text {
+    padding: 0 3vw;
   }
   .main-start {
     grid-area: start;
+    display: block;
+    position: relative;
+    top: 30vh;
+    box-shadow: 0px -3px 5px #ccc;
+    padding: 0;
+    background-color: white;
+    margin-bottom: 0;
   }
-  .main-img {
-    width: 60vw;
+  .main-start-title {
+    margin-top: 10vh;
+  }
+  .main-start-button {
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 3px 10px #ccc;
+    margin: 7vh 0 10vh 15vw;
+  }
+  .footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 0 5vw;
+  }
+  .footer-logo {
+    margin-top: 30vh;
+    width: 45vw;
+    height: 6vh;
+  }
+  .footer-information-contact-location {
+    display: grid;
+    grid-template-areas: "icon text";
+    column-gap: 7.5vw;
+    margin-top: 5vh;
+  }
+  .footer-information-contact-location img {
+    grid-area: icon;
+    width: 10px;
+  }
+  .footer-information-contact-location p {
+    margin: 0;
+    text-align: left;
+    padding-right: 20vw;
+    position: relative;
+    bottom: 3px;
+  }
+  .footer-information-contact-phone,
+  .footer-information-contact-mail {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+  }
+  .footer-about {
+    margin-top: 10vh;
+    font-size: 14px;
+    display: block;
   }
 }
