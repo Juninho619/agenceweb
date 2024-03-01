@@ -1,6 +1,7 @@
 h1 {
   font-family: poppins;
   font-weight: 600;
+  margin-right: 195px;
 }
 
 h2 {
@@ -30,10 +31,16 @@ header {
   grid-area: up;
 }
 
+.header-container {
+  padding-left: 60px;
+  padding-top: 50px;
+}
+
 .header-container-text {
-  margin-top: 180px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-top: 18px;
+  margin-right: 36px;
+  margin-left: 13px;
+  margin-bottom: 107px;
 }
 
 .header-container-text-button {
@@ -49,17 +56,18 @@ header {
 
 header div p {
   padding: 10px;
-  padding-right: 278px;
+  padding-right: 244px;
+  margin-right: -142px;
 }
 
 header div img {
   width: 600px;
 }
 .header-up-logo {
-  height: 60px;
+  height: 26px;
   width: 200px;
   margin-top: 28px;
-  margin-left: 50px;
+  margin-left: 66px;
 }
 
 .header-up-button {
@@ -93,38 +101,54 @@ header div img {
   gap: 15px;
 }
 .main-together {
-  border-style: solid;
+  box-shadow: 0px 3px 10px #ccc;
+  border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.main-together {
   display: grid;
-  grid-template-areas: "text image";
+  margin: 30px 40px auto;
+  grid-template-areas:
+    "title image"
+    "text image";
 }
 
 .main-together-text {
   display: grid;
   grid-area: text;
+  text-align: left;
+  margin-left: 17x;
+  margin-right: -53px;
+}
+
+.main-together-title {
+  display: grid;
+  grid-area: title;
+  text-align: left;
 }
 
 .main-together-img {
   display: grid;
   grid-area: image;
+  width: 40vw;
 }
 
 .main-conversation {
-  border-style: solid;
+  margin: 30px 40px auto;
+  box-shadow: 0px 3px 10px #ccc;
+  border-radius: 20px;
 }
 
 .main-conversation {
   display: grid;
-  grid-template-areas: "image text";
+  grid-template-areas:
+    "image title"
+    "image text";
 }
 
 .main-conversation-img {
   display: grid;
   grid-area: image;
+  width: 40vw;
 }
 
 .main-conversation-text {
@@ -133,12 +157,18 @@ header div img {
 }
 
 .main-user {
-  border-style: solid;
+  display: grid;
+  grid-template-areas:
+    "title image"
+    "text image";
+  margin: 30px 40px auto;
+  box-shadow: 0px 3px 10px #ccc;
+  border-radius: 20px;
 }
 
-.main-user {
+.main-user-title {
   display: grid;
-  grid-template-areas: "text image";
+  grid-area: title;
 }
 
 .main-user-text {
@@ -149,6 +179,7 @@ header div img {
 .main-user-img {
   display: grid;
   grid-area: image;
+  width: 40vw;
 }
 footer {
   background-color: hsl(192, 100%, 9%);
