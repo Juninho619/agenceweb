@@ -85,18 +85,23 @@ header div img {
 
 .header-container {
   display: grid;
-  grid-template-areas: "title image";
+  grid-template-areas: "title" "image";
 }
 
-.header-container-text-main-title div img {
+.header-container-text-main-title {
   grid-area: image;
 }
 
 .header-container-text {
   grid-area: title;
 }
+.header-container-text-button {
+  background-color: hsl(322, 100%, 66%);
+  width: 155px;
+  border-radius: 25%;
+}
 
-.main {
+/* .main {
   display: grid;
   gap: 15px;
 }
