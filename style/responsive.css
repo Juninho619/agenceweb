@@ -31,6 +31,8 @@
   .header-up-button {
     background-color: white;
     width: 20vw;
+    justify-self: flex-end;
+    position: static;
     border-radius: 30px;
     padding: 4px 8px;
     text-align: center;
@@ -39,9 +41,13 @@
     justify-self: flex-end;
     position: initial;
     border: 0;
+
   }
   .header-container {
     grid-area: container;
+    grid-template-areas:
+      "title"
+      "image";
     text-align: center;
     margin: 40px 0;
   }
