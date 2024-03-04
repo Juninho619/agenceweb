@@ -52,7 +52,7 @@
       "title"
       "image";
     text-align: center;
-    margin: 40px 0;
+    margin: 13vh 0;
     padding: 0;
   }
   .header-container-text {
@@ -61,7 +61,7 @@
       "title"
       "text"
       "button";
-    margin: 0 7vh;
+    margin: 0 35px;
   }
   .header-container-text-main-title {
     grid-area: title;
