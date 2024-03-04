@@ -61,7 +61,7 @@ header div p {
 }
 
 header div img {
-  width: 600px;
+  width: 50vw;
 }
 .header-up-logo {
   height: 26px;
@@ -94,11 +94,6 @@ header div img {
 
 .header-container-text {
   grid-area: title;
-}
-.header-container-text-button {
-  background-color: hsl(322, 100%, 66%);
-  width: 155px;
-  border-radius: 25%;
 }
 
 .main {

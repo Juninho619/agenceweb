@@ -16,6 +16,7 @@
     grid-template-areas:
       "up"
       "container";
+    padding: 0;
   }
   .header-up {
     grid-area: up;
@@ -23,10 +24,12 @@
     grid-template-areas: "logo buton";
     padding: 5vh 5vw;
     margin-bottom: 5px;
+    margin: 0;
   }
   .header-up-logo {
     width: 100px;
     height: 15px;
+    margin: 0;
   }
   .header-up-button {
     background-color: white;
@@ -41,7 +44,7 @@
     justify-self: flex-end;
     position: initial;
     border: 0;
-
+    margin: 0;
   }
   .header-container {
     grid-area: container;
@@ -50,6 +53,7 @@
       "image";
     text-align: center;
     margin: 40px 0;
+    padding: 0;
   }
   .header-container-text {
     display: grid;
@@ -61,6 +65,7 @@
   }
   .header-container-text-main-title {
     grid-area: title;
+    margin-right: 0;
   }
   .header-container-text p {
     grid-area: text;
@@ -69,6 +74,7 @@
     font-family: "Open Sans";
     word-spacing: 1px;
     margin: 0;
+    padding: 0;
   }
   .header-container-text-button,
   .main-start-button {
@@ -84,7 +90,9 @@
   }
   .header-container img {
     width: 80vw;
-    margin: 0 8vw;
+    margin: 0;
+    display: flex;
+    justify-self: center;
   }
   .main {
     display: grid;
@@ -136,8 +144,20 @@
     justify-self: center;
     margin-bottom: 5vh;
   }
+  .main-together {
+    grid-template-columns: 1fr;
+    margin: 8vh 0;
+  }
+  .main-together-title {
+    text-align: center;
+  }
+  .main-together-text {
+    text-align: center;
+    margin-right: 0;
+  }
   .main-conversation {
     grid-area: conversation;
+    margin: 0;
   }
   .main-conversation-img {
     grid-area: img;
@@ -146,14 +166,15 @@
   }
   .main-conversation-text {
     grid-area: texte;
-    padding: 0 1vw;
+    padding: 0 3vw;
   }
   .main-user {
     grid-area: user;
-    margin-bottom: 0;
+    margin: 8vh 0;
   }
   .main-user-text {
     padding: 0 3vw;
+    grid-area: texte;
   }
   .main-start {
     grid-area: start;
