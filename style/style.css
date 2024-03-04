@@ -244,7 +244,7 @@ footer {
   grid-area: location;
 }
 
-.footer-information-aboutt {
+.footer-information-about {
   display: grid;
   grid-area: about;
   margin-left: 25%;
