@@ -110,50 +110,65 @@ header div img {
   grid-template-areas:
     "title image"
     "text image";
+  height: 60vh;
 }
 
 .main-together-text {
   display: grid;
   grid-area: text;
   text-align: left;
-  margin-left: 17x;
-  margin-right: -53px;
+  margin-left: 20vh;
 }
 
 .main-together-title {
   display: grid;
   grid-area: title;
   text-align: left;
+  margin-left: 90px;
+  margin-top: 30vh;
+  margin-left: 20vh;
 }
 
 .main-together-img {
   display: grid;
   grid-area: image;
-  width: 40vw;
+  width: 30vw;
+  padding-left: 180px;
 }
 
 .main-conversation {
-  margin: 30px 40px auto;
+  margin: 96px 40px auto;
   box-shadow: 0px 3px 10px #ccc;
   border-radius: 20px;
-}
-
-.main-conversation {
   display: grid;
   grid-template-areas:
     "image title"
     "image text";
+  height: 60vh;
 }
 
 .main-conversation-img {
   display: grid;
   grid-area: image;
-  width: 40vw;
+  width: 30vw;
 }
 
 .main-conversation-text {
   display: grid;
   grid-area: text;
+  text-align: left;
+  padding-left: 50vh;
+  padding-top: 0px;
+  margin-bottom: 35vh;
+  margin-right: 15vh;
+}
+
+.main-conversation-title {
+  display: grid;
+  grid-area: title;
+  text-align: left;
+  padding-top: 20vh;
+  padding-left: 50vh;
 }
 
 .main-user {
@@ -164,23 +179,92 @@ header div img {
   margin: 30px 40px auto;
   box-shadow: 0px 3px 10px #ccc;
   border-radius: 20px;
+  height: 60vh;
 }
 
 .main-user-title {
   display: grid;
   grid-area: title;
+  text-align: left;
+  margin-left: 90px;
+  margin-top: 25vh;
+  margin-left: 20vh;
+  margin-right: 30vh;
 }
 
 .main-user-text {
   display: grid;
   grid-area: text;
+  text-align: left;
+  margin-left: 20vh;
+  margin-right: 30vh;
 }
 
 .main-user-img {
   display: grid;
   grid-area: image;
-  width: 40vw;
+  width: 30vw;
 }
+
+.main-start {
+  text-align: center;
+  box-shadow: 0px 3px 10px #ccc;
+  border-radius: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.main-start-button p:last-child {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  margin-right: 40%;
+  margin-left: 30%;
+  width: 35%;
+  border-radius: 20px;
+}
+
 footer {
   background-color: hsl(192, 100%, 9%);
+
+  color: white;
+}
+
+.footer-logo {
+  display: grid;
+  grid-area: logo;
+}
+
+.footer-informations {
+  display: grid;
+  grid-area: location;
+  grid-template-areas: "location about blog social";
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.footer-informations-contact {
+  grid-area: location;
+}
+
+.footer-information-aboutt {
+  display: grid;
+  grid-area: about;
+  margin-left: 25%;
+}
+
+.footer-about p a {
+  color: white;
+}
+
+.footer-social {
+  display: grid;
+  grid-area: social;
+  display: inline;
+}
+
+.footer-information-blog {
+  display: grid;
+  grid-area: blog;
+}
+
+.footer-copyright {
+  text-align: right;
 }
