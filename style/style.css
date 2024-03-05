@@ -181,6 +181,7 @@ header div img {
   grid-area: image;
   width: 40vw;
 }
-footer {
+
+.main-start-button footer {
   background-color: hsl(192, 100%, 9%);
 }
