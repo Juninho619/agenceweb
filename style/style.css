@@ -52,25 +52,16 @@ header {
   align-self: center;
 }
 .header-container {
-  /* padding-left: 60px;
-  padding-top: 50px; */
-}
-.header-container {
   display: grid;
   grid-template-areas: "title image";
 }
 .header-container-text {
   padding-top: 70px;
-  /* padding-right: 20vw; */
-  width: 30vw;
 }
 .header-container-text-main-title {
   font-family: "Poppins";
   padding-right: 22px;
 }
-/* .header-container-text {
-  grid-area: title;
-} */
 .header-container-text p {
   margin-bottom: 10px;
 }
