@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media only screen and (max-width: 376px) {
+  body {
+    font-size: 12px;
+    font-family: "Open Sans";
+    margin: 0;
+  }
+  .header {
+    font-family: "Poppins";
+    background-image: url(../medias/images/bg_hero_mobile.svg);
+    background-repeat: repeat;
+    background-color: hsl(193, 100%, 96%);
+    font-weight: 600;
+    display: grid;
+    grid-template-areas:
+      "up"
+      "container";
+  }
+  .header-up {
+    grid-area: up;
+    display: grid;
+    grid-template-areas: "logo buton";
+    width: 80vw;
+    margin: 20px 10vw;
+  }
+  .header-up-logo {
+    grid-area: logo;
+    width: 100px;
+    height: 15px;
+  }
+  .header-up-button {
+    grid-area: buton;
+    background-color: white;
+    width: 20vw;
+    justify-self: flex-end;
+    position: static;
+    border-radius: 30px;
+    padding: 4px 8px;
+    text-align: center;
+    box-shadow: 0px 3px 10px #ccc;
+    font-size: 10px;
+  }
+  .header-container {
+    grid-area: container;
+    grid-template-areas:
+      "title"
+      "image";
+    text-align: center;
+    margin: 40px 10px 10px;
+  }
+  .header-container-text {
+    grid-area: title;
+    margin: 0 7vh;
+  }
+  .header-container-text-main-title {
+    margin-bottom: 10px;
+  }
+  .header-container-text p {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Open Sans";
+    line-height: 1.8em;
+    text-align: center;
+    padding: 0 21px;
+  }
+  .header-container img {
+    grid-area: image;
+  }
+  .header-container-text-button {
+    border-radius: 30px;
+    margin: 9vh 8vw;
+    padding: 3vh 0;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-family: "Open Sans";
+  }
+  .header-container img {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+  .main {
+    display: grid;
+    grid-template-areas:
+      "together"
+      "conversation"
+      "user"
+      "start";
+    margin: 0 15vw;
+  }
+  .main-together {
+    grid-area: together;
+  }
+  .main-conversation {
+    grid-area: conversation;
+  }
+  .main-user {
+    grid-area: user;
+  }
+  .main-start {
+    grid-area: start;
+  }
+  .main-img {
+    width: 70vw;
+  }
+}
