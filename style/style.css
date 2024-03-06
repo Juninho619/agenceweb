@@ -183,33 +183,35 @@ header {
 }
 
 .main-start {
-  box-shadow: 0px 3px 10px #ccc;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: 125px;
+  background-color: white;
+  box-shadow: 0px -3px 5px #ccc;
+  border-radius: 20px;
   margin: 0 20vw;
 }
-
+.main-start-title {
+  margin: 50px 0 20px;
+}
 .main-start-button {
   background-color: hsl(322, 100%, 66%);
   color: white;
-  width: 35%;
-  border-radius: 20px;
+  border-radius: 60px;
   text-align: center;
-
+  padding: 20px 75px;
+  margin: 0 0 50px;
+}
 .main-start-button:hover {
   background-color: hsl(322, 79%, 74%);
   cursor: pointer;
 }
-
-}
-
 footer {
   background-color: hsl(192, 100%, 9%);
   color: white;
   padding-top: 20vh;
-  margin-bottom: 0vh;
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 10vh;
