@@ -182,6 +182,9 @@ header {
   width: 30vw;
 }
 
+<<<<<<< HEAD
+.main-start-button footer {
+=======
 .main-start {
   display: flex;
   flex-direction: column;
@@ -209,6 +212,7 @@ header {
   cursor: pointer;
 }
 footer {
+>>>>>>> 06c3ed6b2038bb97f3d21c559620857cc5fc4eb1
   background-color: hsl(192, 100%, 9%);
   color: white;
   padding-top: 20vh;
