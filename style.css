@@ -51,6 +51,11 @@ header {
   text-align: center;
   align-self: center;
 }
+
+.header-up-button:hover {
+  color: gray;
+  cursor: pointer;
+}
 .header-container {
   display: grid;
   grid-template-areas: "title image";
@@ -73,6 +78,11 @@ header {
   border-radius: 40px;
   padding: 15px 10px;
   margin-top: 30px;
+}
+
+.header-container-text-button:hover {
+  background-color: hsl(322, 79%, 74%);
+  cursor: pointer;
 }
 
 .header-container img {
@@ -219,6 +229,11 @@ header {
   text-align: center;
 }
 
+.main-start-button:hover {
+  background-color: hsl(322, 79%, 74%);
+  cursor: pointer;
+}
+
 .main-start-title {
   position: relative;
   top: 2vh;
@@ -251,16 +266,53 @@ footer {
   grid-area: location;
 }
 
+.footer-information-contact-location {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-information-contact-phone {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-information-contact-mail {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-information-contact-location p {
+  margin-right: -140px;
+}
+
 .footer-information-about {
   display: grid;
   grid-area: about;
-  margin-left: 25%;
+  margin-left: 40%;
+}
+
+.footer-informations img {
+  display: flex;
+}
+
+.footer-information-about p a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-information-blog p a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer-social {
   display: grid;
   grid-area: social;
   display: inline;
+  margin-right: 3vw;
 }
 
 .footer-information-blog {
@@ -275,11 +327,17 @@ footer {
 .footer-information-blog p a {
   color: white;
 }
+
 .icon-footer {
   border: 1px solid white;
   width: 16px;
   height: 16px;
   border-radius: 50%;
+}
+.footer-social i:hover {
+  cursor: pointer;
+  color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
 }
 .fa-facebook-f {
   width: 16.5px;
@@ -297,4 +355,6 @@ footer {
 }
 .footer-copyright {
   text-align: right;
+  margin-right: -120px;
+  font-size: smaller;
 }
