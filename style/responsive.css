@@ -196,6 +196,9 @@
     width: 45vw;
     height: 6vh;
   }
+  .footer-informations {
+    display: block;
+  }
   .footer-information-contact-location {
     display: grid;
     grid-template-areas: "icon text";
@@ -219,10 +222,9 @@
     gap: 5vw;
     align-items: center;
   }
-  .footer-about {
-    margin-top: 10vh;
+  .footer-information-about {
+    margin: 0;
     font-size: 14px;
-    display: block;
   }
   .footer-social {
     display: flex;
