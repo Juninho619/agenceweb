@@ -189,12 +189,11 @@
   .footer {
     background-color: hsl(192, 100%, 9%);
     color: white;
-    padding: 0 5vw 10vh;
+    padding: 150px 5vw 10vh;
+    margin-top: 50px;
   }
   .footer-logo {
-    margin-top: 30vh;
     width: 45vw;
-    height: 6vh;
   }
   .footer-informations {
     display: block;
@@ -239,20 +238,17 @@
     border-radius: 50%;
   }
   .fa-facebook-f {
-    width: 16.5px;
-    height: 18px;
-    padding: 7px 0 0 10.5px;
+    padding: 9px 10px 6px 10px;
   }
   .fa-twitter {
-    width: 18px;
-    height: 18px;
-    padding: 8px 1px 1px 8px;
+    padding: 8px 7px 7px 9px;
   }
   .fa-instagram {
     font-size: 14px;
-    padding: 7px 4px 4px 7px;
+    padding: 8px 8px 7px 8px;
   }
   .footer-copyright {
+    margin-top: 50px;
     text-align: center;
   }
 }
