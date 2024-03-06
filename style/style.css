@@ -251,6 +251,31 @@ footer {
   cursor: pointer;
 }
 
+.footer-information-contact {
+}
+
+.footer-information-contact-location {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-information-contact-location img {
+  position: relative;
+  bottom: 55px;
+}
+
+.footer-information-contact-phone {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-information-contact-mail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .footer-social {
   display: grid;
   grid-area: social;
