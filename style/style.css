@@ -18,6 +18,16 @@ body {
   padding: 0%;
   margin: 0%;
 }
+
+.darkheader {
+  background-color: black;
+  color: white;
+}
+
+.darkbody {
+  background-color: black;
+  color: white;
+}
 header {
   background-image: url(../medias/images/bg_hero_desktop.svg);
   background-color: hsl(193, 100%, 96%);
@@ -49,10 +59,15 @@ header {
   box-shadow: 0px 3px 10px #ccc;
   text-align: center;
   align-self: center;
+  color: black !important;
 }
 
+/* .header-up-button-dark {
+  color: black !important;
+} */
+
 .header-up-button:hover {
-  color: gray;
+  color: gray !important;
   cursor: pointer;
 }
 .header-container {
@@ -93,6 +108,9 @@ header {
   grid-area: image;
 }
 
+.fa-regular .fa-sun {
+  color: white;
+}
 .main {
   display: grid;
   gap: 40px;
@@ -192,6 +210,10 @@ header {
   border-radius: 20px;
   margin: 0 20vw;
 }
+
+.main-start-button-dark {
+  background-color: black;
+}
 .main-start-title {
   margin: 50px 0 20px;
 }
@@ -207,6 +229,7 @@ header {
   background-color: hsl(322, 79%, 74%);
   cursor: pointer;
 }
+
 footer {
   background-color: hsl(192, 100%, 9%);
   color: white;
@@ -248,9 +271,6 @@ footer {
 .footer-information-blog p a:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-.footer-information-contact {
 }
 
 .footer-information-contact-location {
