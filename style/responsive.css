@@ -10,7 +10,8 @@
   .header {
     font-family: "Poppins";
     background-image: url(../medias/images/bg_hero_mobile.svg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-color: hsl(193, 100%, 96%);
     font-weight: 600;
     display: grid;
@@ -23,7 +24,7 @@
     grid-area: up;
     display: grid;
     grid-template-areas: "logo buton";
-    padding: 5vh 5vw;
+    padding: 25px 5vw 67px;
     margin-bottom: 5px;
     margin: 0;
   }
@@ -53,7 +54,6 @@
       "title"
       "image";
     text-align: center;
-    margin: 13vh 0;
     padding: 0;
   }
   .header-container-text {
@@ -62,11 +62,13 @@
       "title"
       "text"
       "button";
-    margin: 0 35px;
+    margin: 0 9vw;
+    padding: 0;
   }
   .header-container-text-main-title {
     grid-area: title;
-    margin-right: 0;
+    font-size: 24px;
+    margin-bottom: 28px;
   }
   .header-container-text p {
     grid-area: text;
@@ -74,26 +76,31 @@
     font-size: 16px;
     font-family: "Open Sans";
     word-spacing: 1px;
-    margin: 0;
+    margin: 0 0 38px;
     padding: 0;
   }
   .header-container-text-button,
   .main-start-button {
     grid-area: button;
     border-radius: 30px;
-    margin: 9vh 0 10vh;
-    width: 60vw;
     justify-self: center;
-    padding: 3vh 0;
     background-color: hsl(322, 100%, 66%);
     color: white;
     font-family: "Open Sans";
+  }
+  .header-container-text-button {
+    width: 60vw;
+    margin: 0;
   }
   .header-container img {
     width: 80vw;
     margin: 0;
     display: flex;
     justify-self: center;
+    padding: 0;
+    margin-bottom: 80px;
+    position: relative;
+    top: 46px;
   }
   .main {
     display: grid;
@@ -180,6 +187,7 @@
     margin: 0;
   }
   .main-start-title {
+    font-size: 16px;
     margin-top: 50px;
   }
   .main-start-button {
