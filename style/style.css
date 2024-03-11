@@ -19,6 +19,16 @@ body {
   margin: 0%;
   transition: all 0.4s ease;
 }
+
+.darkheader {
+  background-color: black;
+  color: white;
+}
+
+.darkbody {
+  background-color: black;
+  color: white;
+}
 header {
   background-image: url(../medias/images/bg_hero_desktop.svg);
   background-size: contain;
@@ -51,10 +61,15 @@ header {
   box-shadow: 0px 0px 10px #eee;
   text-align: center;
   align-self: center;
+  color: black !important;
 }
 
+/* .header-up-button-dark {
+  color: black !important;
+} */
+
 .header-up-button:hover {
-  color: gray;
+  color: gray !important;
   cursor: pointer;
 }
 .header-container {
@@ -95,6 +110,11 @@ header {
 
 .header-container-text-main-title div img {
   grid-area: image;
+}
+
+.fa-regular .fa-sun {
+  color: white;
+  height: 25vh;
 }
 
 .main {
@@ -196,6 +216,10 @@ header {
   border-radius: 20px;
   margin: 0 20vw;
 }
+
+.main-start-button-dark {
+  background-color: black;
+}
 .main-start-title {
   margin: 50px 0 20px;
 }
@@ -211,6 +235,7 @@ header {
   background-color: hsl(322, 79%, 74%);
   cursor: pointer;
 }
+
 footer {
   background-color: hsl(192, 100%, 9%);
   color: white;
