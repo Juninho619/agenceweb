@@ -31,7 +31,7 @@ body {
 }
 header {
   background-image: url(../medias/images/bg_hero_desktop.svg);
-  background-size: contain;
+  background-size: cover;
   background-color: hsl(193, 100%, 96%);
   display: grid;
   grid-template-areas:
@@ -111,7 +111,10 @@ header {
 .header-container-text-main-title div img {
   grid-area: image;
 }
-
+.header-container-darkmode-button {
+  display: flex;
+  justify-content: center;
+}
 .fa-regular .fa-sun {
   color: white;
   height: 25vh;
