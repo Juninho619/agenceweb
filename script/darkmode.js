@@ -12,8 +12,8 @@ function myFunction() {
   let darkButtonHeader = document.querySelector("header-up-button");
   darkButtonHeader = document.querySelector(".header-up-button-dark");
 
-  if (darkModeButton.classList == "fa-solid fa-moon") {
-    darkModeButton.setAttribute("class", "fa-regular fa-sun");
-  } else darkModeButton.setAttribute("class", "fa-solid fa-moon");
+  if (darkModeButton.classList == "fa-solid fa-moon fa-3x") {
+    darkModeButton.setAttribute("class", "fa-regular fa-sun fa-3x");
+  } else darkModeButton.setAttribute("class", "fa-solid fa-moon fa-3x");
 }
 darkModeButton.addEventListener("click", myFunction);

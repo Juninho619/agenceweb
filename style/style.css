@@ -110,7 +110,9 @@ header {
 
 .fa-regular .fa-sun {
   color: white;
+  height: 25vh;
 }
+
 .main {
   display: grid;
   gap: 40px;
