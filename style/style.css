@@ -17,22 +17,24 @@ p {
 body {
   padding: 0%;
   margin: 0%;
+  transition: all 0.4s ease;
 }
 header {
   background-image: url(../medias/images/bg_hero_desktop.svg);
+  background-size: contain;
   background-color: hsl(193, 100%, 96%);
   display: grid;
   grid-template-areas:
     "up"
     "title-image";
-  padding: 10vh 5vw;
+  padding: 50px 5vw 46px;
 }
 
 .header-up {
   grid-area: up;
   display: grid;
   grid-template-areas: "logo buton";
-  margin-bottom: 20vh;
+  margin-bottom: 80px;
 }
 .header-up-logo {
   height: 30px;
@@ -46,7 +48,7 @@ header {
   border-radius: 65px;
   width: 120px;
   padding: 10px 30px;
-  box-shadow: 0px 3px 10px #ccc;
+  box-shadow: 0px 0px 10px #eee;
   text-align: center;
   align-self: center;
 }
@@ -64,7 +66,8 @@ header {
 }
 .header-container-text-main-title {
   font-family: "Poppins";
-  padding-right: 22px;
+  font-weight: 600;
+  font-size: 40px;
 }
 .header-container-text p {
   margin-bottom: 10px;
@@ -85,8 +88,9 @@ header {
 }
 
 .header-container img {
-  width: 50vw;
-  margin-left: 10vw;
+  width: 49vw;
+  height: auto;
+  padding-left: 8vw;
 }
 
 .header-container-text-main-title div img {
@@ -96,10 +100,10 @@ header {
 .main {
   display: grid;
   gap: 40px;
-  padding: 20vh 5vw 10vh;
+  padding: 100px 5vw 10vh;
 }
 .main-together {
-  box-shadow: 0px 3px 10px #ccc;
+  box-shadow: 0px 0px 10px #eee;
   border-radius: 20px;
   display: grid;
   grid-template-areas:
@@ -127,7 +131,7 @@ header {
 }
 
 .main-conversation {
-  box-shadow: 0px 3px 10px #ccc;
+  box-shadow: 0px 0px 10px #eee;
   border-radius: 20px;
   display: grid;
   grid-template-areas:
@@ -159,7 +163,7 @@ header {
   grid-template-areas:
     "title image"
     "text image";
-  box-shadow: 0px 3px 10px #ccc;
+  box-shadow: 0px 0px 10px #eee;
   border-radius: 20px;
   padding: 15vh 2vw 15vh 10vw;
 }
@@ -188,7 +192,7 @@ header {
   position: relative;
   top: 125px;
   background-color: white;
-  box-shadow: 0px -3px 5px #ccc;
+  box-shadow: 0px -3px 10px #eee;
   border-radius: 20px;
   margin: 0 20vw;
 }
@@ -248,9 +252,6 @@ footer {
 .footer-information-blog p a:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-.footer-information-contact {
 }
 
 .footer-information-contact-location {
@@ -321,4 +322,12 @@ footer {
 }
 .footer-copyright {
   text-align: right;
+}
+.mosquito {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  clip-path: ellipse(30% 37% at 50% 52%);
+  transition: background-color 0.8s;
 }
